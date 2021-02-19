@@ -1,14 +1,14 @@
 # **Table of Contents**
-  - [TCP, UDP](#TCP,&#32;UDP)
+  - [TCP, UDP](#TCP,-UDP)
 
 ## **TCP, UDP**
-  - [How TCP open a connection? What does it need to open a connection?](#How&#32;TCP&#32;open&#32;a&#32;connection?&#32;What&#32;does&#32;it&#32;need&#32;to&#32;open&#32;a&#32;connection?)
-    - [What are the sequence number and the acknowledgement number?](#What&#32;are&#32;the&#32;sequence&#32;number&#32;and&#32;the&#32;acknowledgment&#32;number?)
-    - [Why there are three-way handshakes but not two-way?](#Why&#32;there&#32;are&#32;three-way&#32;handshakes&#32;but&#32;not&#32;two-way?)
-    - [What is syn, ack mean?](#What&#32;is&#32;syn,&#32;ack&#32;mean?)
-    - [Why they have a send two "random" sequence number? The purpose of this sequence number?]()
-    - [What is the 3rd handshakes fail? How the server can detect it and what does it do in this case?]()
-  - [How TCP handles the connection?](#How&#32;TCP&#32;handles&#32;the&#32;connection?)
+  - [How TCP open a connection? What does it need to open a connection?](#How-TCP-open-a-connection?-What-does-it-need-to-open-a-connection?)
+    - [What are the sequence number and the acknowledgement number?](#What-are-the-sequence-number-and-the-acknowledgment-number?)
+    - [Why there are three-way handshakes but not two-way?](#Why-there-are-three-way-handshakes-but-not-two-way?)
+    - [What is syn, ack mean?](#What-is-syn,-ack-mean?)
+    - [Why they have a send two "random" sequence number? The purpose of this sequence number?](#Why-they-have-a-send-two-"random"-sequence-number?-The-purpose-of-this-sequence-number?)
+    - [What is the 3rd handshakes fail? How the server can detect it and what does it do in this case?](#What-is-the-3rd-handshakes-fail?-How-the-server-can-detect-it-and-what-does-it-do-in-this-case?)
+  - [How TCP handles the connection?](#How-TCP-handles-the-connection?)
 
 ## How TCP open a connection? What does it need to open a connection?
 To open a connection, the server must first bind to and list at a port: this is called a passive open. Once the passive open is established,
