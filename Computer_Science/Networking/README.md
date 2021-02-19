@@ -1,14 +1,14 @@
 # **Table of Contents**
-  - [TCP, UDP](#TCP,-UDP)
+  - [TCP, UDP](#TCP-UDP)
 
 ## **TCP, UDP**
-  - [How TCP open a connection? What does it need to open a connection?](#How-TCP-open-a-connection?-What-does-it-need-to-open-a-connection?)
-    - [What are the sequence number and the acknowledgement number?](#What-are-the-sequence-number-and-the-acknowledgment-number?)
-    - [Why there are three-way handshakes but not two-way?](#Why-there-are-three-way-handshakes-but-not-two-way?)
-    - [What is syn, ack mean?](#What-is-syn,-ack-mean?)
-    - [Why they have a send two "random" sequence number? The purpose of this sequence number?](#Why-they-have-a-send-two-"random"-sequence-number?-The-purpose-of-this-sequence-number?)
-    - [What is the 3rd handshakes fail? How the server can detect it and what does it do in this case?](#What-is-the-3rd-handshakes-fail?-How-the-server-can-detect-it-and-what-does-it-do-in-this-case?)
-  - [How TCP handles the connection?](#How-TCP-handles-the-connection?)
+  - [How TCP open a connection? What does it need to open a connection?](#How-TCP-open-a-connection-What-does-it-need-to-open-a-connection)
+    - [What are the sequence number and the acknowledgement number?](#What-are-the-sequence-number-and-the-acknowledgment-number)
+    - [Why there are three-way handshakes but not two-way?](#Why-there-are-three-way-handshakes-but-not-two-way)
+    - [What is syn, ack mean?](#What-is-syn-ack-mean)
+    - [Why they have a send two "random" sequence number? The purpose of this sequence number?](#Why-they-have-a-send-two-random-sequence-number-The-purpose-of-this-sequence-number)
+    - [What is the 3rd handshakes fail? How the server can detect it and what does it do in this case?](#What-is-the-3rd-handshakes-fail-How-the-server-can-detect-it-and-what-does-it-do-in-this-case)
+  - [How TCP handles the connection?](#How-TCP-handles-the-connection)
 
 ## How TCP open a connection? What does it need to open a connection?
 To open a connection, the server must first bind to and list at a port: this is called a passive open. Once the passive open is established,
