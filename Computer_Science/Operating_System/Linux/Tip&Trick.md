@@ -51,7 +51,7 @@
 ```
     + echo 'GOVERNOR="performance"' | sudo tee /etc/default/cpufrequtils
     + sudo systemctl disable ondemand
-	+ sudo systemctl restart cpufrequtils
+    + sudo systemctl restart cpufrequtils
 ```
   + reference:
     + https://www.kernel.org/doc/Documentation/cpu-freq/governors.txt
@@ -73,8 +73,8 @@
 ```	
   + udp:
 ```	
-	+ server: nc -l -u 1711
-	+ client: nc -u 127.0.0.1 1711
+    + server: nc -l -u 1711
+    + client: nc -u 127.0.0.1 1711
 ```
 ### 005. Check UUID Harddisks or Partitions
 ```	
@@ -89,10 +89,10 @@
 
 **use command line**
 ```
-	+ fdisk -l | grep '^Disk' (list all detected hard disks)
-	+ sudo vim /etc/fstab (add disk need to mounted to /etc/fstab)
-		+ ex: [file_system(name or uuid)]/dev/sda1 [mount_point]/home/thanghv7/data [type(cfg in gparted)]ext4 default 0 0
-	+ sudo mount -a (mount all file system in /etc/fstab)
+    + fdisk -l | grep '^Disk' (list all detected hard disks)
+    + sudo vim /etc/fstab (add disk need to mounted to /etc/fstab)
+        + ex: [file_system(name or uuid)]/dev/sda1 [mount_point]/home/thanghv7/data [type(cfg in gparted)]ext4 default 0 0
+    + sudo mount -a (mount all file system in /etc/fstab)
 ```
   + reference:
     + https://linuxconfig.org/how-fstab-works-introduction-to-the-etc-fstab-file-on-linux
