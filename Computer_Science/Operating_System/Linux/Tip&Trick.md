@@ -6,7 +6,7 @@
             sudo apt install cpufrequtils
         ```
   + application: 
-    + [001. Set performane for cpu:](#001.-Set-performance-for-cpu:)
+    + [001. Set performance for cpu:](#001-set-performance-for-cpu)
 ### 2. iptables: 
   *a user-space application program allows configuring the tables provided by the Linux kernel firewall, as well as the chains and rules it store.*
   + install:
@@ -47,7 +47,7 @@
     + https://firewalld.org/ 
 
 # ------ APPLICATION -------------------------------------
-### 001. Set performane for cpu:
+### 001. Set performance for cpu:
 ```
     + echo 'GOVERNOR="performance"' | sudo tee /etc/default/cpufrequtils
     + sudo systemctl disable ondemand
