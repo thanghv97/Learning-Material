@@ -47,6 +47,16 @@
     + https://firewalld.org/ 
 
 # ------ APPLICATION -------------------------------------
+### 000. Display information of operating system
+  - 
+  ```
+    uname
+  ```
+  - 
+  ```
+    lsb_release -id
+  ```
+
 ### 001. Set performance for cpu:
 ```
     + echo 'GOVERNOR="performance"' | sudo tee /etc/default/cpufrequtils
