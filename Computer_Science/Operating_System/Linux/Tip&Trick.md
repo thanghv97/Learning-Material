@@ -46,6 +46,13 @@
   + reference:
     + https://firewalld.org/ 
 
+
+# ------ Service -----------------------------------------
+### 001. systemd-logind.service
+  *systemd-logind is a system service that manages user logins*
+  + application:
+    + [009. Set mode handle(do nothing) when close laptop lib](#009-set-mode-handle-do-nothing-when-close-laptop-lib)
+
 # ------ APPLICATION -------------------------------------
 ### 000. Display information of operating system
   - 
@@ -116,3 +123,13 @@
 ```
     + sudo systemctl [start|stop|enable|disable] firewalld.service 
 ```
+
+### 009. Set mode handle when close laptop lib
+  + do nothing 
+```
+    + sudo -H gedit /etc/systemd/logind.conf
+    + set HandleLidSwitch=ignore
+    + sudo systemctl restart systemd-logind
+```
+  + reference: 
+    + https://askubuntu.com/questions/15520/how-can-i-tell-ubuntu-to-do-nothing-when-i-close-my-laptop-lid
