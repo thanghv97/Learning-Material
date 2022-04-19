@@ -117,16 +117,20 @@
   
     `after 1.10.8-stable`
     ```
-        geth --networkid 14333 --datadir "./data" --bootnodes enode://.... --port 30303 --ipcdisable --syncmode full --http --allow-insecure-unlock --http.corsdomain "*" --http.port 8545 --unlock 0x34785cf6bD1CC94d5ea7D2dcF2Be541A628B53BE --password password.txt --mine console 
+      ~/GethPoA$ cd node1
+      ~/GethPoA/Node1$ geth --networkid 14333 --datadir "./data" --port 30303 --ipcdisable --syncmode full --http --allow-insecure-unlock --http.corsdomain "*" --http.port 8545 --unlock 0x1D635Ba6FBa91AB8a921F44114A8D891433a13FD --password password.txt --mine console 
     ```
 
   + node 
     
     `after 1.10.8-stable`
     ```
-        geth --networkid 14333 --datadir "./data" --bootnodes enode://.... --port 30303 --ipcdisable --syncmode full --http --allow-insecure-unlock --http.corsdomain "*" --http.port 8545 --unlock 0xf98EC1905AA6D629196eE81De49D8d1B0d3357A8 --password password.txt console 
+      ~/GethPoA$ cd node1
+      ~/GethPoA/Node1$ geth --networkid 14333 --datadir "./data" --port 30303 --ipcdisable --syncmode full --http --allow-insecure-unlock --http.corsdomain "*" --http.port 8545 --unlock 0x1D635Ba6FBa91AB8a921F44114A8D891433a13FD --password password.txt console 
     ```
 
+  + unlock nhiều account ``` --unlock "0x....,0x...." --password password.txt ``` với password mỗi account là 1 dòng trong file password.txt
+  
 ### Q&A
   + Nhiều node đào 
 
