@@ -1,5 +1,6 @@
 {
     "cSpell.ignoreWords": [
+        "Ethash",
         "a",
         "accept",
         "add",
@@ -122,6 +123,7 @@
         "home",
         "how",
         "https",
+        "hình",
         "hôm",
         "hợp",
         "i",
@@ -160,6 +162,7 @@
         "maintains",
         "managed",
         "message",
+        "minh",
         "mkdir",
         "mod",
         "module",
@@ -183,6 +186,7 @@
         "netcat",
         "network",
         "networkid",
+        "new",
         "ng",
         "nh",
         "nhau",
@@ -208,9 +212,12 @@
         "phi",
         "phiên",
         "phát",
+        "phép",
+        "phải",
         "phụ",
         "point",
         "port",
+        "precompile",
         "program",
         "provided",
         "provides",
@@ -264,7 +271,9 @@
         "their",
         "there",
         "thu",
+        "thuận",
         "thuộc",
+        "thông",
         "thực",
         "to",
         "tr",
@@ -312,6 +321,7 @@
         "đúng",
         "được",
         "đặt",
+        "đồng",
         "đổi"
     ]
 }

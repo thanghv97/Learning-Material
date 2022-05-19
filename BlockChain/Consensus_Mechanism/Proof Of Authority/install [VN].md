@@ -130,8 +130,10 @@
     ```
 
   + unlock nhiều account ``` --unlock "0x....,0x...." --password password.txt ``` với password mỗi account là 1 dòng trong file password.txt
-  
-### Q&A
-  + Nhiều node đào 
+  + flag 
+    + --nodiscorver           : disable cơ chế tìm kiếm các node 
+    + --allow-insecure-unlock : Cho phép unlock account thông qua http
+    + --mine                  : cho phép node đào block
 
-  + Time tạo block 
+  + rule
+    + lần đầu init cần tất cả các node sealer lên 
