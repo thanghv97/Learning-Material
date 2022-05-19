@@ -9,7 +9,7 @@ when a run node doesn't include sealer but enable `--mine` or [miner.start()](#)
     WARN [05-19|09:42:41.129] Block sealing failed                     err="unauthorized signer"
 ```
 
-check sealers for initial [block 0] in file `genesis.json` or [clique.getSigners](../../json-rpc%20apis/clique.md#clique-getSigner)
+check sealers for initial [block 0] in file `genesis.json` or [clique.getSigners](../../Json-Rpc%20APIs/clique.md#clique-getSigner)
   + genesis.json [block 0]
     ```
     "extraData":"0x000....{addr0}{addr1}...0000"
@@ -27,13 +27,13 @@ check sealers for initial [block 0] in file `genesis.json` or [clique.getSigners
     ```
 
 ## Add Remove validator node
-To authorize a new sealer, existing ones can propose it via [clique.propose](../../json-rpc%20apis/clique.md#clique-propose). When more than half the signers proposed it, the authorization comes into effect immediately and the new account can start signing blocks.
+To authorize a new sealer, existing ones can propose it via [clique.propose](../../Json-Rpc%20APIs/clique.md#clique-propose). When more than half the signers proposed it, the authorization comes into effect immediately and the new account can start signing blocks.
   ```
     > clique.propose("0x....", true)
     null
   ```
 
-Similarly, existing signers can propose deauthorizing existing ones via [clique.propose](../../json-rpc%20apis/clique.md#clique-propose). Again if more than half signers deauthorize a signer, it is immediately removed from the list and blocks minted by it are rejected from that point onward.
+Similarly, existing signers can propose deauthorizing existing ones via [clique.propose](../../Json-Rpc%20APIs/clique.md#clique-propose). Again if more than half signers deauthorize a signer, it is immediately removed from the list and blocks minted by it are rejected from that point onward.
   ```
     > clique.propose("0x....", false)
     null
